@@ -1,26 +1,24 @@
 "use strict";
 
-// const MAX_CHARS = 3;
-
 let fNameBox = document.getElementById("fName");
-// let warningBox = document.getElementById("warningBox");
 let submitButton = document.getElementById("submit");
 
 let recipesMadeCheckboxes = document.querySelectorAll("div#recipes-made input")
-let recipesMadeSelection = [];
+let recipesMadeSelectionArray = [];
+let recipesMadeString = "";
 
 fNameBox.addEventListener("click", validateName)
 
 document.getElementById("recipes-made").onclick = function () {
-    recipesMadeSelection = []
+    recipesMadeSelectionArray = []
     recipesMadeCheckboxes.forEach(
         function (node) {
             if (node.checked) {
-                recipesMadeSelection.push(node);
+                recipesMadeSelectionArray.push(node.value);
             }
         }
     );
-    console.log(recipesMadeSelection);
+    recipesMadeString = recipesMadeSelectionArray.toString();
 }
 
 
@@ -33,25 +31,11 @@ function validateName() {
     } else {
         fNameBox.setCustomValidity("");
     }
-    // warningBox.innerHTML = "";
-    // let charCount = countCharacters(fNameBox.value);
-
-    // try {
-    //     if(charCount > MAX_CHARS) throw "First name must be 3 characters or less"
-    // } catch (error) {
-    //     warningBox.innerHTML = "First name must be 3 characters or less"
-    // }
 }
 
 submitButton.onclick = function() {
     validateName();
 }
-
-// function countCharacters(textStr) {
-//     var commentregx = /\s/g;
-//     var chars = textStr.replace(commentregx, "");
-//     return chars.length;
-// }
 
 /*
     I mostly used the Firefox debugging tools to see
