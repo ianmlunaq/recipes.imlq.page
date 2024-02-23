@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Ian's Recipe Book Form</title>
+    <script src="form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="/index.html">Ian's Recipe Book</a></h1>
+    </header>
+
+    <form>
+        <label for="fName">First name:</label><br>
+        <input type="text" id="fName" name="fName" pattern="^.{3}$" required><br><br>
+
+        <label for="lName">Last name:</label><br>
+        <input type="text" id="lName" name="lName" required><br><br>
+
+        <label for="favRecipe">Favorite Recipe</label><br>
+        <select name="favRecipe" id="favRecipe" required>
+            <option disabled selected value> -- select an option -- </option>
+            <option value="champurrado">Champurrado</option>
+            <option value="chocoflan">Chocoflan</option>
+            <option value="curry-udon">Curry Udon</option>
+            <option value="soda-bread">Soda Bread</option>
+            <option value="chocomil">Chocomil</option>
+            <option value="fried-rice">Fried Rice</option>
+        </select> <br><br>
+
+        <h4>Which of these recipes have you made yourself?</h4>
+        <div id="recipes-made" style="margin-left: 30px">
+            <input type="checkbox" id="champurrado" name="champurrado" value="Champurrado">
+            <label for="champurrado">Champurrado</label> <br>
+            <input type="checkbox" id="chocoflan" name="chocoflan" value="chocoflan">
+            <label for="chocoflan">Chocoflan</label> <br>
+            <input type="checkbox" id="curry-udon" name="curry-udon" value="curry-udon">
+            <label for="curry-udon">Curry Udon</label> <br>
+            <input type="checkbox" id="soda-bread" name="soda-bread" value="soda-bread">
+            <label for="soda-bread">Soda Bread</label> <br>
+            <input type="checkbox" id="chocomil" name="chocomil" value="chocomil">
+            <label for="chocomil">Chocomil</label> <br>
+            <input type="checkbox" id="fried-rice" name="fried-rice" value="fried-rice">
+            <label for="fried-rice">Fried Rice</label> <br> <br>
+        </div>
+
+        <label for="required-box">Check this box if you love me: </label>
+        <input type="checkbox" id="required-box" required/> <br><br>
+
+        <input type="submit" value="Submit" id="submit"/>
+    </form> <br>
+    <div id="warningBox"></div>
+</body>
+</html>
