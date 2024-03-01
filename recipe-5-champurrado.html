@@ -1,40 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <meta charset="utf-8" />
-   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-   <title>Ian's Recipe Book</title>
-   <script src="recipe-5.js" defer></script>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Ian's Recipe Book</title>
+    <script src="recipe-5.js" defer></script>
+    <script src="servings-calculator.js" defer></script>
+    <script src="objects.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-   <header>
-      <h1><a href="/index.html">Ian's Recipe Book</a></h1>
-      <h2>Champurrado</h2>
-   </header>
-   <p>
-      Ingredients:
-      <ul>
-          <li>2 cups of water</li>
-          <li>1/2 a cinnamon stick</li>
-          <li>2 oz piloncillo or dark brown sugar</li>
-          <li>3 cups of milk</li>
-          <li>1 tablet of Mexican chocolate (e.g., Abuelita, Ibarra)</li>
-          <li>3 1/2 oz of corn masa flour (e.g., Maseca)</li>
-      </ul>
-      Procedure:
-      <ol>
-          <li>Boil 1 cup of water with cinnamon stick and piloncillo until sugar has completely dissolved.</li>
-          <li>Add milk and chocolate. Mix until chocolate has completely dissolved.</li>
-          <li>In a separate container, combine 1 cup of water with masa flour and whisk until no clumps remain.</li>
-          <li>To ensure there are no clumps of masa, filter the mixture through a sieve as you pour it into the hot chocolate.</li>
-          <li>Whisk the champurrado constantly to prevent the masa from sticking to the bottom of the pot.</li>
-          <li>Heat until it is at your desired consistency, serve, and enjoy!</li>
-      </ol>
-     </p>
-     <span>Champurrado Image: </span><input type="number" id="img" value="1"/>
-     <div>
-      <img id="champImg" alt="Champurrado" src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Champurrado_thenewplace_sf.jpg">
-     </div>
+<main>
+    <header>
+        <h2 style="text-align: left"><a href="index.html">Go back ↩</a></h2>
+        <h1 style="text-align: center" class="complementary">Champurrado ☕️</h1>
+    </header>
+    <p style="text-align: center">Champurrado is a warm, thick, and chocolatey Mexican beverage. It's similar to hot
+        chocolate, but with a distinct
+        flavor and texture due to the addition of masa harina, a corn flour dough. This gives champurrado a smooth,
+        slightly
+        grainy texture and a subtle corn flavor that complements the chocolate. Typically flavored with cinnamon and
+        sometimes vanilla extract, champurrado is a comforting and satisfying drink enjoyed for breakfast, as a snack,
+        or
+        even as a light meal replacement.</p>
+
+    <span>Amount to make: </span><input type="number" id="servings" value="1" autocomplete="off" min="1"/>
+    <h2 style="text-align: center" class="complementary">Ingredients:</h2>
+    <ul>
+        <li><span class="ingredient">2</span> cups of water</li>
+        <li><span class="ingredient">0.5</span> cinnamon sticks</li>
+        <li><span class="ingredient">2</span> oz piloncillo or dark brown sugar</li>
+        <li><span class="ingredient">3</span> cups of milk</li>
+        <li><span class="ingredient">1</span> tablet of Mexican chocolate (e.g., Abuelita, Ibarra)</li>
+        <li><span class="ingredient">3.5</span> oz of corn masa flour (e.g., Maseca)</li>
+    </ul>
+    <h2 style="text-align: center" class="complementary">Procedure:</h2>
+    <ol>
+        <li>Boil 1 cup of water with cinnamon stick and piloncillo until sugar has completely dissolved.</li>
+        <li>Add milk and chocolate. Mix until chocolate has completely dissolved.</li>
+        <li>In a separate container, combine 1 cup of water with masa flour and whisk until no clumps remain.</li>
+        <li>To ensure there are no clumps of masa, filter the mixture through a sieve as you pour it into the hot
+            chocolate.
+        </li>
+        <li>Whisk the champurrado constantly to prevent the masa from sticking to the bottom of the pot.</li>
+        <li>Heat until it is at your desired consistency, serve, and enjoy!</li>
+    </ol>
+    </p>
+    <span>Champurrado Image: </span><input type="number" id="img" value="1" min="1" max="3"/>
+    <div>
+        <br><img id="champImg" alt="Champurrado"
+                 src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Champurrado_thenewplace_sf.jpg"
+                 class="centerBlock"> <br>
+    </div>
+</main>
+<footer class="complementary">
+    <h2><a href="index.html">Ian's Cookbook</a></h2>
+</footer>
 </body>
 </html>

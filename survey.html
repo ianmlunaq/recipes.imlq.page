@@ -4,15 +4,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Ian's Recipe Book Form</title>
-    <script src="form.js" defer></script>
+    <script src="survey.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h1><a href="/index.html">Ian's Recipe Book</a></h1>
-    </header>
+<header>
+    <h2 style="text-align: left"><a href="index.html">Go back ↩</a></h2>
+    <h1 style="text-align: center" class="complementary">Survey ✏️</h1>
+</header>
 
-    <form>
+    <form> <!--action="https://formsubmit.co/ianmlq@duck.com" method="post"-->
         <label for="fName">First name:</label><br>
         <input type="text" id="fName" name="fName" pattern="^.{3}$" required><br><br>
 
@@ -31,7 +33,7 @@
         </select> <br><br>
 
         <h4>Which of these recipes have you made yourself?</h4>
-        <div id="recipes-made" style="margin-left: 30px">
+        <div id="recipes-made">
             <input type="checkbox" id="champurrado" name="champurrado" value="champurrado">
             <label for="champurrado">Champurrado</label> <br>
             <input type="checkbox" id="chocoflan" name="chocoflan" value="chocoflan">
@@ -47,7 +49,7 @@
         </div>
 
         <label for="required-box">Check this box if you love me: </label>
-        <input type="checkbox" id="required-box" required/> <br><br>
+        <input type="checkbox" id="required-box" name="lm" required/> <br><br>
 
         <input type="submit" value="Submit" id="submit"/>
     </form> <br>
