@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Ian's Recipe Book Form</title>
+    <title>Survey</title>
     <script src="survey.js" defer></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -14,12 +14,12 @@
     <h1 style="text-align: center" class="complementary">Survey ✏️</h1>
 </header>
 
-    <form> <!--action="https://formsubmit.co/ianmlq@duck.com" method="post"-->
-        <label for="fName">First name:</label><br>
-        <input type="text" id="fName" name="fName" pattern="^.{3}$" required><br><br>
+    <form action="survey-submission.html" method="get">
+        <label for="first-name">First name:</label><br>
+        <input type="text" id="first-name" name="first-name" pattern="^.{3}$" required><br><br>
 
-        <label for="lName">Last name:</label><br>
-        <input type="text" id="lName" name="lName" required><br><br>
+        <label for="last-name">Last name:</label><br>
+        <input type="text" id="last-name" name="last-name" required><br><br>
 
         <label for="favRecipe">Favorite Recipe</label><br>
         <select name="favRecipe" id="favRecipe" required>
@@ -34,25 +34,25 @@
 
         <h4>Which of these recipes have you made yourself?</h4>
         <div id="recipes-made">
-            <input type="checkbox" id="champurrado" name="champurrado" value="champurrado">
+            <input type="checkbox" id="champurrado" name="made-champurrado" value="Yes">
             <label for="champurrado">Champurrado</label> <br>
-            <input type="checkbox" id="chocoflan" name="chocoflan" value="chocoflan">
+            <input type="checkbox" id="chocoflan" name="made-chocoflan" value="Yes">
             <label for="chocoflan">Chocoflan</label> <br>
-            <input type="checkbox" id="curry-udon" name="curry-udon" value="curry-udon">
+            <input type="checkbox" id="curry-udon" name="made-curry-udon" value="Yes">
             <label for="curry-udon">Curry Udon</label> <br>
-            <input type="checkbox" id="soda-bread" name="soda-bread" value="soda-bread">
+            <input type="checkbox" id="soda-bread" name="made-soda-bread" value="Yes">
             <label for="soda-bread">Soda Bread</label> <br>
-            <input type="checkbox" id="chocomil" name="chocomil" value="chocomil">
+            <input type="checkbox" id="chocomil" name="made-chocomil" value="Yes">
             <label for="chocomil">Chocomil</label> <br>
-            <input type="checkbox" id="fried-rice" name="fried-rice" value="fried-rice">
+            <input type="checkbox" id="fried-rice" name="made-fried-rice" value="Yes">
             <label for="fried-rice">Fried Rice</label> <br> <br>
         </div>
 
-        <label for="required-box">Check this box if you love me: </label>
-        <input type="checkbox" id="required-box" name="lm" required/> <br><br>
+        <label for="required-box">Check this box if this is the best website in the world: </label>
+        <input type="checkbox" id="required-box" name="best-website" required/> <br><br>
 
         <input type="submit" value="Submit" id="submit"/>
     </form> <br>
-    <div id="warningBox"></div>
+<a href="survey-submission.html"><button>Previous Survey Submission</button></a>
 </body>
 </html>

@@ -21,8 +21,6 @@ document.getElementById("recipes-made").onclick = function () {
     recipesMadeString = recipesMadeSelectionArray.toString();
 }
 
-
-
 function validateName() {
     fNameBox.checkValidity();
 

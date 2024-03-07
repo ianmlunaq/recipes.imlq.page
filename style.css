@@ -41,3 +41,14 @@ footer {
     border-width: 2px 0px 0px 0px ;
     padding: 1em ;
 }
+
+table#submission-table {
+    border-collapse: collapse;
+    margin: 30px auto;
+}
+
+table#submission-table td {
+    border: 1px solid whitesmoke;
+    padding: 5px;
+    min-width: 150px;
+}
