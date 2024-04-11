@@ -66,12 +66,13 @@ ol li {
 .flex-box {
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .flex-article {
     width: 200px;
     max-width: 200px;
-    margin: 10px 5px auto 5px;
+    margin: 10px auto auto auto;
     flex: 200px;
     border: 1px solid #ff5d0c;
     border-radius: 10px;
