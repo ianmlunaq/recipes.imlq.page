@@ -1,18 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <meta charset="utf-8" />
-   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-   <title>Ian's Recipe Book</title>
-   <script src="soloCaseProj.js" defer></script>
-   <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Fried Rice</title>
+    <script src="objects.js" defer></script>
+    <script src="servings-calculator.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 <header>
-   <h2 style="text-align: left"><a href="index.html">Go back ↩</a></h2>
-   <h1 style="text-align: center" class="complementary">Fried Rice 🍚</h1>
+    <h2 style="text-align: left"><a href="javascript:history.back()">Go back ↩</a></h2>
+    <h1 style="text-align: center" class="complementary">Fried Rice 🍚</h1>
 </header>
-   <p>To-Do</p>
+<main>
+    <p style="text-align: center;">Fried rice is a classic Asian dish made by stir-frying cooked rice with vegetables,
+        eggs, and sometimes protein like meat or seafood. Soy sauce and other seasonings add savory flavor, while the
+        cooking process creates a contrast between fluffy rice and crispy bits. It's a versatile and delicious meal that
+        can be customized with endless ingredient combinations. If you cook bacon before the fried rice, you can use the
+        bacon fat to cook, then add the bacon back in at the end. Optionally, serve with chili crisp.
+    </p>
+
+    <span>Amount to make: </span><input type="number" id="servings" value="1" autocomplete="off" min="1"/>
+    <h2 style="text-align: center" class="complementary">Ingredients:</h2>
+    <ul>
+        <li><span class="ingredient">1</span> cup of leftover cooked rice.</li>
+        <li><span class="ingredient">2</span> eggs</li>
+        <li><span class="ingredient">1</span> cup of frozen veggies.</li>
+        <li><span class="ingredient">0.5</span> Tbsp soy sauce</li>
+        <li><span class="ingredient">0.5</span> Tbsp oyster sauce</li>
+        <li><span class="ingredient">0.5</span> Tbsp toasted/untoasted sesame oil</li>
+        <li><span class="ingredient">1</span> green onion</li>
+    </ul>
+    <h2 style="text-align: center" class="complementary">Procedure:</h2>
+    <ol>
+        <li>Thinly slice green onion.</li>
+        <li>Scramble eggs in a bit of oil on medium heat.</li>
+        <li>When eggs are mostly cooked, add in everything else minus the green onions.</li>
+        <li>Mix thoroughly and cook until frozen veggies are unfrozen.</li>
+        <li>Serve topped with green onions.</li>
+    </ol>
+    <img src="https://external-preview.redd.it/0xvtxW64Zeb9pujchQJSvEK824lZr-pmY6-YilDLdNU.jpg?auto=webp&s=6ce3b7823af873598cf5b590b113458593784109"
+         alt="Fried rice" class="centerBlock"> <br>
+</main>
+<footer class="complementary">
+    <a href="https://recipes.imlq.page">recipes.imlq.page</a>
+</footer>
 </body>
 </html>

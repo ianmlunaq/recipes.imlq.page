@@ -3,16 +3,49 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Ian's Recipe Book</title>
-    <script src="soloCaseProj.js" defer></script>
+    <title>Soda Bread</title>
+    <script src="objects.js" defer></script>
+    <script src="servings-calculator.js" defer></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-<header>
-    <h2 style="text-align: left"><a href="index.html">Go back ↩</a></h2>
-    <h1 style="text-align: center" class="complementary">Soda Bread 🍞</h1>
-</header>
-<p>To-Do</p>
+<main>
+    <header>
+        <h2 style="text-align: left"><a href="javascript:history.back()">Go back ↩</a></h2>
+        <h1 style="text-align: center" class="complementary">Soda Bread 🍞</h1>
+    </header>
+    <p style="text-align: center;">Soda bread is a dense and crumbly quick bread, traditionally from Ireland. Unlike
+        most breads, it skips the yeast and uses baking soda for leavening. This creates a distinct
+        texture with a slightly tangy flavor. The basic recipe uses just flour, milk, baking soda, and salt, but
+        variations can include caraway seeds, raisins, or even a touch of sweetness. It's a hearty bread perfect for
+        toasting and enjoying with butter or a simple stew.
+    </p>
+
+    <span>Amount to make: </span><input type="number" id="servings" value="1" autocomplete="off" min="1"/>
+    <h2 style="text-align: center" class="complementary">Ingredients:</h2>
+    <ul>
+        <li><span class="ingredient">3</span> cups all-purpose flour</li>
+        <li><span class="ingredient">1</span> tsp salt</li>
+        <li><span class="ingredient">1.5</span> tsp baking POWDER</li>
+        <li><span class="ingredient">1.25</span> cup milk</li>
+        <li><span class="ingredient">1</span> large egg</li>
+    </ul>
+    <h2 style="text-align: center" class="complementary">Procedure:</h2>
+    <ol>
+        <li>PREHEAT oven to 425°F.</li>
+        <li>In a bowl, combine dry ingredients first, then add wet ingredients and combine.</li>
+        <li>Place dough on a baking tray lined with well-greased aluminium foil.</li>
+        <li>With wet hands, shape dough into a round-ish loaf, sprinkle with flour, score a cross on top, and cover with
+            a metal bowl.
+        </li>
+        <li>Bake at 425°F for 30 minutes covered and another 30 minutes uncovered.</li>
+    </ol>
+    <img src="https://www.gritsandpinecones.com/wp-content/uploads/2020/04/traditional-irish-soda-bread-11.jpg"
+         alt="Chocoflan" class="centerBlock"> <br>
+</main>
+<footer class="complementary">
+    <a href="https://recipes.imlq.page">recipes.imlq.page</a>
+</footer>
 </body>
 </html>

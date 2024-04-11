@@ -8,4 +8,3 @@ document.getElementById("img").onclick = function() {
         default: champImg.src = "https://www.freeiconspng.com/uploads/no-image-icon-11.PNG";
     }
 }
-

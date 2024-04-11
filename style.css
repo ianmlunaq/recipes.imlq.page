@@ -3,8 +3,8 @@ body {
     margin: auto ;
     padding: 0 16px;
     margin-bottom: 300px;
-    color: rgb(216, 212, 207);
     font-size: large;
+    font-family: Tahoma, sans-serif;
 }
 
 .complementary {
@@ -12,7 +12,8 @@ body {
 }
 
 a {
-    color: rgb(52, 145, 255) ;
+    color: rgb(52, 145, 255);
+    text-decoration: none;
 }
 
 h1 {
@@ -28,7 +29,6 @@ h1 {
 }
 
 html {
-    background-color: #181a1b;
 }
 
 .unavailable {
@@ -39,7 +39,8 @@ footer {
     text-align: center;
     border-style: solid ;
     border-width: 2px 0px 0px 0px ;
-    padding: 1em ;
+    margin-top: 20px;
+    padding: 10px;
 }
 
 table#submission-table {
@@ -51,4 +52,52 @@ table#submission-table td {
     border: 1px solid whitesmoke;
     padding: 5px;
     min-width: 150px;
+}
+
+#isEmailValid {
+    color: red;
+    padding-left: 10px;
+}
+
+ol li {
+    padding-bottom: 8px;
+}
+
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-article {
+    width: 200px;
+    max-width: 200px;
+    margin: 10px 5px auto 5px;
+    flex: 200px;
+    border: 1px solid #ff5d0c;
+    border-radius: 10px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.flex-article img {
+    object-fit: cover;
+    height: 170px;
+    width: 170px;
+    border-radius: 10px;
+
+}
+
+.flex-article .recipe-name {
+    font-weight: bold;
+    margin-top: 0;
+    color: black;
+}
+
+.flex-article .recipe-time {
+    margin-top: -10px;
+    color: black;
+}
+
+.border {
+    border: 2px solid red ;
 }

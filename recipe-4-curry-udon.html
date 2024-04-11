@@ -3,16 +3,46 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Ian's Recipe Book</title>
-    <script src="soloCaseProj.js" defer></script>
+    <title>Curry Udon</title>
+    <script src="objects.js" defer></script>
+    <script src="servings-calculator.js" defer></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-<header>
-    <h2 style="text-align: left"><a href="index.html">Go back ↩</a></h2>
-    <h1 style="text-align: center" class="complementary">Curry Udon 🍜</h1>
-</header>
-<p>To-Do</p>
+<main>
+    <header>
+        <h2 style="text-align: left"><a href="javascript:history.back()">Go back ↩</a></h2>
+        <h1 style="text-align: center" class="complementary">Curry Udon 🍜</h1>
+    </header>
+    <p style="text-align: center;"> Curry udon is a Japanese dish that combines the comfort of two favorites: udon noodles and Japanese curry. It features thick, chewy udon noodles served in a rich, flavorful curry broth. The curry itself can be made from scratch with a dashi base or use pre-made roux blocks for a quicker version.
+
+        This hearty noodle soup is known for its satisfying and warming taste, perfect for a quick weeknight meal or a cozy lunch. You might also find variations with additional toppings like sliced pork, tempura vegetables, or even a soft-boiled egg. </p>
+
+    <span>Amount to make: </span><input type="number" id="servings" value="1" autocomplete="off" min="1"/>
+    <h2 style="text-align: center" class="complementary">Ingredients:</h2>
+    <ul>
+        <li><span class="ingredient">0.5</span> yellow onions</li>
+        <li><span class="ingredient">3</span> green onions</li>
+        <li><span class="ingredient">3</span> Japanese curry roux blocks (e.g., Golden Curry, Vermont Curry)</li>
+        <li><span class="ingredient">1</span> carrot</li>
+        <li><span class="ingredient">3</span> garlic cloves</li>
+        <li><span class="ingredient">14</span> oz pre-cooked udon noodles</li>
+    </ul>
+    <h2 style="text-align: center" class="complementary">Procedure:</h2>
+    <ol>
+        <li>Thinly slice onion and green onions. Set green onions aside for garnish.</li>
+        <li>Cut carrot in half length-wise, then thinly slice to get little, half-moon carrot slices.</li>
+        <li>In a deep pan or shallow pot, sauté onion and carrot in a Tbsp, or so, of oil on medium heat until golden.</li>
+        <li>Slice garlic and throw into pan along with the roux blocks and as much water as curry package recommends. Cover and let rest until curry blocks have melted.</li>
+        <li>Add udon and gently wiggle them around to soften and loosen them up.</li>
+        <li>Serve topped with green onions.</li>
+    </ol>
+    <img src="curry-udon.jpg"
+         alt="Chocoflan" class="centerBlock"> <br>
+</main>
+<footer class="complementary">
+    <a href="https://recipes.imlq.page">recipes.imlq.page</a>
+</footer>
 </body>
 </html>

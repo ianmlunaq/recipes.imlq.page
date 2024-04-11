@@ -3,16 +3,44 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Ian's Recipe Book</title>
-    <script src="soloCaseProj.js" defer></script>
+    <title>Chocomil</title>
+    <script src="objects.js" defer></script>
+    <script src="servings-calculator.js" defer></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-<header>
-    <h2 style="text-align: left"><a href="index.html">Go back ↩</a></h2>
-    <h1 style="text-align: center" class="complementary">Chocomil 🥛</h1>
-</header>
-<p>To-Do</p>
+<main>
+    <header>
+        <h2 style="text-align: left"><a href="javascript:history.back()">Go back ↩</a></h2>
+        <h1 style="text-align: center" class="complementary">Chocomil 🥛</h1>
+    </header>
+    <p style="text-align: center;">Chocomil is basically Mexican chocolate milk that's popular as a quick breakfast.
+        It's a delicious and slightly thicker version compared to regular chocolate milk, with the most basic
+        ingredients being milk, chocolate powder, and a raw egg. I like adding a whole banana, ground cinnamon, and a
+        bit of oatmeal for flavor and to make it a more substantial drink. You can also add greek yogurt or kefir to
+        give it a bit of a tangy flavor.
+    </p>
+
+    <span>Amount to make: </span><input type="number" id="servings" value="1" autocomplete="off" min="1"/>
+    <h2 style="text-align: center" class="complementary">Ingredients:</h2>
+    <ul>
+        <li><span class="ingredient">1</span> cup of milk</li>
+        <li><span class="ingredient">1</span> Tbsp chocolate powder (e.g., Chocomilk, Nesquik)</li>
+        <li><span class="ingredient">1</span> egg</li>
+        <li><span class="ingredient">1</span> banana</li>
+        <li><span class="ingredient">0.25</span> cup of oatmeal</li>
+        <li>A sprinkle of cinnamon</li>
+    </ul>
+    <h2 style="text-align: center" class="complementary">Procedure:</h2>
+    <ol>
+        <li>Blend everything together in a blender.</li>
+    </ol>
+    <img src="https://inmamamaggieskitchen.com/wp-content/uploads/2021/08/Mexican-Chocomil--768x1025.jpg"
+         alt="Chocoflan" class="centerBlock"> <br>
+</main>
+<footer class="complementary">
+    <a href="https://recipes.imlq.page">recipes.imlq.page</a>
+</footer>
 </body>
 </html>
